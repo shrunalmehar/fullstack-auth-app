@@ -1,8 +1,8 @@
 # 🌸 Daily Affirmations Fullstack Web App
 
 ### 👩‍💻 Submitted by: **Shrunal Mehar**
-### 📚 Course: B.Tech CSE (2nd Year)
-### 🏫 College: [Your College Name]
+### 📚 Course: B.Tech CSE (3rd Year)
+### 🏫 College: SIT, Nagpur
 ### 🗓️ Date: November 2025
 
 ---
