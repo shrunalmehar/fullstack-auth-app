@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Affirmations 🌼</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div id="bg-overlay"></div>
+
+  <header>
+    <div class="logo">Daily <span>Affirmations</span></div>
+    <nav id="nav-links">
+      <a href="#home" class="active">Home</a>
+      <a href="#motivational">Motivational</a>
+      <a href="#life">Life</a>
+      <a href="#selflove">Self-Love</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div id="menu-toggle">☰</div>
+  </header>
+
+  <section id="home">
+    <div class="home-content">
+      <h1>Welcome to <span>Daily Affirmations</span></h1>
+      <p>Feed your mind with peace, positivity & purpose 🌞</p>
+      <div id="affirmBox">
+        <div id="affirmText">"You are capable of amazing things."</div>
+        <div id="affirmAuthor">— Daily Affirmation</div>
+      </div>
+      <button id="nextBtn" class="btn">Next Affirmation ✨</button>
+    </div>
+  </section>
+
+  <section id="motivational">
+    <h2>💪 Motivational Quotes</h2>
+    <div class="quote-grid" id="motivationalList"></div>
+  </section>
+
+  <section id="life">
+    <h2>🌿 Life Quotes</h2>
+    <div class="quote-grid" id="lifeList"></div>
+  </section>
+
+  <section id="selflove">
+    <h2>💖 Self-Love Quotes</h2>
+    <div class="quote-grid" id="selfloveList"></div>
+  </section>
+
+  <section id="about">
+    <h2>About Daily Affirmations</h2>
+    <p>This project promotes positivity, mindfulness, and self-awareness 🌸.  
+    Each quote encourages gratitude, strength, and self-belief to help you grow every day.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us 💌</h2>
+    <form id="contactForm">
+      <label>Name</label>
+      <input type="text" placeholder="Enter your name" required />
+      <label>Email</label>
+      <input type="email" placeholder="Enter your email" required />
+      <label>Message</label>
+      <textarea rows="5" placeholder="Write your message..." required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>© 2025 Daily Affirmations | Designed with 💛 by Shrunal</footer>
+
+  <button id="scrollTopBtn" title="Go to top">⬆</button>
+
+  <script type="module" src="/src/script.js"></script>
+</body>
+</html>
