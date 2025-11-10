@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Daily Affirmations 🌼</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/src/style.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- no inline redirect scripts before DOCTYPE — page starts clean -->
 </head>
 <body>
   <div id="bg-overlay"></div>
@@ -20,9 +23,13 @@
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
-    <div id="menu-toggle">☰</div>
+    <div class="header-actions">
+      <button id="logoutBtn" class="btn">Logout</button>
+      <div id="menu-toggle">☰</div>
+    </div>
   </header>
 
+  <!-- HOME -->
   <section id="home">
     <div class="home-content">
       <h1>Welcome to <span>Daily Affirmations</span></h1>
@@ -35,36 +42,41 @@
     </div>
   </section>
 
+  <!-- MOTIVATIONAL -->
   <section id="motivational">
     <h2>💪 Motivational Quotes</h2>
     <div class="quote-grid" id="motivationalList"></div>
   </section>
 
+  <!-- LIFE -->
   <section id="life">
     <h2>🌿 Life Quotes</h2>
     <div class="quote-grid" id="lifeList"></div>
   </section>
 
+  <!-- SELF LOVE -->
   <section id="selflove">
     <h2>💖 Self-Love Quotes</h2>
     <div class="quote-grid" id="selfloveList"></div>
   </section>
 
+  <!-- ABOUT -->
   <section id="about">
     <h2>About Daily Affirmations</h2>
     <p>This project promotes positivity, mindfulness, and self-awareness 🌸.  
     Each quote encourages gratitude, strength, and self-belief to help you grow every day.</p>
   </section>
 
+  <!-- CONTACT -->
   <section id="contact">
     <h2>Contact Us 💌</h2>
     <form id="contactForm">
       <label>Name</label>
-      <input type="text" placeholder="Enter your name" required />
+      <input id="contactName" type="text" placeholder="Enter your name" required />
       <label>Email</label>
-      <input type="email" placeholder="Enter your email" required />
+      <input id="contactEmail" type="email" placeholder="Enter your email" required />
       <label>Message</label>
-      <textarea rows="5" placeholder="Write your message..." required></textarea>
+      <textarea id="contactMessage" rows="5" placeholder="Write your message..." required></textarea>
       <button type="submit" class="btn">Send Message</button>
     </form>
   </section>
@@ -73,6 +85,8 @@
 
   <button id="scrollTopBtn" title="Go to top">⬆</button>
 
-  <script type="module" src="/src/script.js"></script>
+  <!-- scripts loaded at end, use plain JS (not module) -->
+  <script src="auth.js" defer></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
