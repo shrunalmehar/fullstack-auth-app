@@ -2,7 +2,7 @@
 
 ### 👩‍💻 Submitted by: **Shrunal Mehar**
 ### 📚 Course: B.Tech CSE (2nd Year)
-### 🏫 College: [Your College Name]
+### 🏫 College: SIT, Nagpur
 ### 🗓️ Date: November 2025
 
 ---
